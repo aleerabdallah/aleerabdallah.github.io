@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              roboto: ["Roboto", "sans-serif"],
+              jost: ["Jost"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-[#1d1e20] font-[jost] text-[#cecfd1] mx-4 sm:mx-8 md:mx-20 lg:mx-[15rem] relative"
+  >
+    <header class="mb-8 lg:mb-[3rem]">
+      <nav
+        class="navbar pt-6 lg:pt-[2rem] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0"
+      >
+        <div>
+          <a href="/" class="text-xl sm:text-2xl font-bold">DEV</a>
+        </div>
+        <ul class="nav-list flex flex-col sm:flex-row gap-6 lg:gap-[7rem]">
+          <li><a href="/logs">Logs</a></li>
+          <li><a href="/about">About</a></li>
+          <!--<li><a href="/contact/">Contact</a></li>-->
+        </ul>
+      </nav>
+    </header>
+    <main class="mb-10 mx-4 sm:mx-8 md:mx-16 lg:mx-[4.5rem]">
+      
+<h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-[2.5rem] font-extrabold">
+  Hello World
+</h1>
+<section class="text-base sm:text-lg lg:text-[1.2rem] mt-6 lg:mt-[3rem] font-mono"> 
+  <p>Welcome to my blog! 🎉</p>
+<p>This is my first post using <a href="https://gohugo.io">Hugo</a> — a fast, modern static site generator.</p>
+<h3>Why Hugo?</h3>
+<ul>
+<li>It's really fast ⚡</li>
+<li>You can write in Markdown</li>
+<li>Easy theming and customization</li>
+<li>Great for blogging and documentation</li>
+</ul>
+<p>Here’s an example of some code:</p>
+<p><code>python
+print("Hello, world!")</code></p>
+</section>
+
+    </main>
+    <footer
+      class="mt-16 lg:mt-[12rem] flex justify-center font-mono text-sm sm:text-base"
+    >
+      <div class="text-center">
+        <p>&copy; 2025 Abdallah. All rights reserved.</p>
+        <p>Built with ❤️ using a static site generator.</p>
+      </div>
+    </footer>
+  </body>
+</html>

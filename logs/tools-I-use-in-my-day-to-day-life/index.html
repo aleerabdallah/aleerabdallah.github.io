@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              roboto: ["Roboto", "sans-serif"],
+              jost: ["Jost"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-[#1d1e20] font-[jost] text-[#cecfd1] mx-4 sm:mx-8 md:mx-20 lg:mx-[15rem] relative"
+  >
+    <header class="mb-8 lg:mb-[3rem]">
+      <nav
+        class="navbar pt-6 lg:pt-[2rem] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0"
+      >
+        <div>
+          <a href="/" class="text-xl sm:text-2xl font-bold">DEV</a>
+        </div>
+        <ul class="nav-list flex flex-col sm:flex-row gap-6 lg:gap-[7rem]">
+          <li><a href="/logs">Logs</a></li>
+          <li><a href="/about">About</a></li>
+          <!--<li><a href="/contact/">Contact</a></li>-->
+        </ul>
+      </nav>
+    </header>
+    <main class="mb-10 mx-4 sm:mx-8 md:mx-16 lg:mx-[4.5rem]">
+      
+<h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-[2.5rem] font-extrabold">
+  Tools I Use in My Day-to-Day Life
+</h1>
+<section class="text-base sm:text-lg lg:text-[1.2rem] mt-6 lg:mt-[3rem] font-mono"> 
+  <p>As a developer and content creator, the tools I use every day shape how I work. Here's a curated list of what I rely on regularly — from productivity apps to development environments.</p>
+<h2>🧠 Productivity</h2>
+<ul>
+<li><strong>Notion</strong> – My go-to for notes, task management, and idea organization.</li>
+<li><strong>Obsidian</strong> – For daily journaling and connected thought writing (Zettelkasten-style).</li>
+<li><strong>Raycast</strong> – Lightning-fast launcher and command center for macOS.</li>
+<li><strong>Google Calendar</strong> – Simple but effective for scheduling.</li>
+</ul>
+<h2>💻 Development</h2>
+<ul>
+<li><strong>VS Code</strong> – My primary code editor with a few essential extensions:</li>
+<li>Prettier</li>
+<li>ESLint</li>
+<li>GitLens</li>
+<li><strong>iTerm2</strong> – Terminal of choice with custom themes and Zsh.</li>
+<li><strong>Docker</strong> – For containerizing projects and running services locally.</li>
+<li><strong>GitHub Copilot</strong> – For quick code suggestions and prototyping.</li>
+</ul>
+<h2>🌐 Browsing &amp; Extensions</h2>
+<ul>
+<li><strong>Brave Browser</strong> – Fast, secure, and privacy-conscious.</li>
+<li><strong>Pocket</strong> – Save articles to read later.</li>
+<li><strong>Tab Wrangler</strong> – Helps keep open tabs under control.</li>
+</ul>
+<h2>🎨 Design &amp; Visuals</h2>
+<ul>
+<li><strong>Figma</strong> – Collaborative design for UI/UX mockups.</li>
+<li><strong>Pixelmator Pro</strong> – Lightweight image editing on macOS.</li>
+<li><strong>LottieFiles</strong> – Quick animations for websites and apps.</li>
+</ul>
+<h2>☁️ Cloud &amp; Backup</h2>
+<ul>
+<li><strong>Dropbox</strong> – Simple cloud storage and syncing.</li>
+<li><strong>Backblaze</strong> – Automated, affordable cloud backup.</li>
+<li><strong>1Password</strong> – Password manager I fully trust.</li>
+</ul>
+<h2>🎵 Focus &amp; Music</h2>
+<ul>
+<li><strong>Spotify</strong> – With tons of playlists for coding, writing, and deep work.</li>
+<li><strong>Noisli</strong> – Ambient sound generator for focus.</li>
+</ul>
+<h2>🔚 Final Thoughts</h2>
+<p>The specific tools might change over time, but the principles remain the same: <strong>simplicity</strong>, <strong>speed</strong>, and <strong>reliability</strong>.</p>
+<p>Have a favorite tool I didn’t mention? Let me know!</p>
+</section>
+
+    </main>
+    <footer
+      class="mt-16 lg:mt-[12rem] flex justify-center font-mono text-sm sm:text-base"
+    >
+      <div class="text-center">
+        <p>&copy; 2025 Abdallah. All rights reserved.</p>
+        <p>Built with ❤️ using a static site generator.</p>
+      </div>
+    </footer>
+  </body>
+</html>

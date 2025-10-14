@@ -28,41 +28,51 @@
         },
       };
     </script>
+    <style>
+      .site {
+        min-height: 100dvh;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: minmax(0, 1fr);
+      }
+    </style>
   </head>
   <body
     class="bg-[#1d1e20] font-[jost] text-[#cecfd1] mx-4 sm:mx-8 md:mx-20 lg:mx-[15rem] relative"
   >
-    <header class="mb-8 lg:mb-[3rem]">
-      <nav
-        class="navbar pt-6 lg:pt-[2rem] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0"
-      >
-        <div>
-          <a href="/" class="text-xl sm:text-2xl font-bold">DEV</a>
-        </div>
-        <ul class="nav-list flex flex-col sm:flex-row gap-6 lg:gap-[7rem]">
-          <li><a href="/logs">Logs</a></li>
-          <li><a href="/about">About</a></li>
-          <!--<li><a href="/contact/">Contact</a></li>-->
-        </ul>
-      </nav>
-    </header>
-    <main class="mb-10 mx-4 sm:mx-8 md:mx-16 lg:mx-[4.5rem]">
-      
+    <div class="site">
+      <header class="mb-8 lg:mb-[3rem]">
+        <nav
+          class="navbar pt-6 lg:pt-[2rem] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0"
+        >
+          <div>
+            <a href="/" class="text-xl sm:text-2xl font-bold">DEV</a>
+          </div>
+          <ul class="nav-list flex flex-col sm:flex-row gap-6 lg:gap-[7rem]">
+            <li><a href="/logs/">Logs</a></li>
+            <li><a href="/about/">About</a></li>
+            <!--<li><a href="/contact/">Contact</a></li>-->
+          </ul>
+        </nav>
+      </header>
+      <main class="mb-10 mx-4 sm:mx-8 md:mx-16 lg:mx-[6.5rem]">
+        
 <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-[2.5rem] font-extrabold">
   About
 </h1>
-<section class="text-base sm:text-lg lg:text-[1.2rem] mt-6 lg:mt-[3rem] font-mono"> 
+<section class="text-base sm:text-lg lg:text-[1.2rem] mt-6 lg:mt-[3rem]">
   <p>I'm a <em>software engineer</em> with 2 years experience</p>
 </section>
 
-    </main>
-    <footer
-      class="mt-16 lg:mt-[12rem] flex justify-center font-mono text-sm sm:text-base"
-    >
-      <div class="text-center">
-        <p>&copy; 2025 Abdallah. All rights reserved.</p>
-        <p>Built with ❤️ using a static site generator.</p>
-      </div>
-    </footer>
+      </main>
+      <footer
+        class="mt-[3rem] mb-[1.5rem] lg:mt-[3rem] flex justify-center text-sm sm:text-base"
+      >
+        <div class="text-center">
+          <p>&copy; 2025 Abdallah. All rights reserved.</p>
+          <p>Built with ❤️ using a static site generator.</p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
